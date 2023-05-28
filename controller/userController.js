@@ -105,6 +105,7 @@ exports.verfiy=async(req,res,next)=>{
 exports.finduser=async(req,res)=>{
 
     
+    
     const alluser=await myModel.find()
     
     return res.status(200).json(alluser)
